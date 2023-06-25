@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">AuctionsTable</title>
+    <!-- Fontawesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.css"/>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        <div class="header-1">
+            <a sec:authorize="!isAuthenticated()" th:href="@{/homepage}" class="logo"> <i class="fa-solid fa-gavel"></i> auctionstable</a>
+            <a sec:authorize="isAuthenticated()" th:href="@{/homepage?user={user}(user=${user.getUsername()})}" class="logo"> <i class="fa-solid fa-gavel"></i> auctionstable</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <span sec:authorize="!isAuthenticated()">
+                    <div id="search-btn" class="fas fa-search"></div>
+                    <div id="cart-btn" class="fas fa-shopping-cart" onclick="window.location.href='/userlogin'"></div>
+                    <div id="login-btn" class="fa-solid fa-right-to-bracket" onclick="window.location.href='/userlogin'"></div>
+                    <div id="signup-btn" class="fa-solid fa-registered" onclick="window.location.href='/user/registration'"></div>
+                </span>
+                <span sec:authorize="isAuthenticated()">
+                    <div id="search-btn">
+                        <div class="fas fa-search" style="align-items: center;"></div>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <button class="btn-user">
+                            <div>
+                                <span sec:authentication="principal.fullName"></span>
+                                <ul class="user-list">
+                                    <li>
+                                        <a th:href="@{/user/account?user={user}(user=${user.getUsername()})}" class="user-list-link first">account</a>
+                                    </li>
+                                    <li>
+                                        <a th:href="@{/logout}" class="user-list-link">sign out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                        <ion-icon style="color: white; margin-left: 1rem;" name="person"></ion-icon>
+                    </div>
+
+                    <div id="cart-btn">
+                        <div class="fas fa-shopping-cart" onclick="window.location.href='/cart'" style="align-items: center;"></div>
+                    </div>
+
+                </span>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <div sec:authorize="!isAuthenticated()"><a th:href="@{/homepage}">home</a></div>
+                <div sec:authorize="isAuthenticated()"><a th:href="@{/homepage?user={user}(user=${user.getUsername()})}">home</a></div>
+                <div>
+                    <a href="html/explore.html">explore</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-item">
+                            <a href="html/explore.html#!Sport">sport</a>
+                            <ul>
+                                <li><a href="html/explore.html#!Cycling">cycling</a></li>
+                                <li><a href="html/explore.html#!WaterSport">water sport</a></li>
+                                <li><a href="html/explore.html#!MartialArt">martial art</a></li>
+                                <li><a href="html/explore.html#!Fitness">fitness</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="html/explore.html#!Fashion">fashion</a>
+                            <ul>
+                                <li><a href="html/explore.html#!Footwear">footwear</a></li>
+                                <li><a href="html/explore.html#!Clothing">clothing</a></li>
+                                <li><a href="html/explore.html#!Accessories">accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="html/explore.html#!Jewelry">jewelry</a>
+                            <ul>
+                                <li><a href="html/explore.html#!Rings">rings</a></li>
+                                <li><a href="html/explore.html#!Earrings">earrings</a></li>
+                                <li><a href="html/explore.html#!Bracelets">bracelets</a></li>
+                                <li><a href="html/explore.html#!Necklaces">necklaces</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="html/explore.html#!Electronic">electronic</a>
+                            <ul>
+                                <li><a href="html/explore.html#!CellphoneandAccessories">cellphones and accessories</a></li>
+                                <li><a href="html/explore.html#!ComputersandTablets">computers and tablets</a></li>
+                                <li><a href="html/explore.html#!VideosgameandConsole">videos game and console</a></li>
+                                <li><a href="html/explore.html#!SmartHome">smart home</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="html/explore.html#!Art">art</a>
+                            <ul>
+                                <li><a href="html/explore.html#!Paintings">paintings</a></li>
+                                <li><a href="html/explore.html#!Photographs">photographs</a></li>
+                                <li><a href="html/explore.html#!Sculptures">sculptures</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="#!Others">others</a>
+                        </div>
+                    </div>
+                </div>
+                <div><a href="html/completed.html">completed</a></div>
+                <div><a href="html/aboutUs.html">about</a></div>
+                <div><a href="html/review.html">review</a></div>
+            </nav>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar">
+        <a sec:authorize="!isAuthenticated()" th:href="@{/homepage}" class="fas fa-home"></a>
+        <a sec:authorize="isAuthenticated()" th:href="@{/homepage?user={user}(user=${user.getUsername()})}" class="fas fa-home"></a>
+        <a href="#explore" id="explore-bottom" class="fa-solid fa-square-caret-left"></a>
+        <a href="html/completed.html" class="fa-solid fa-clipboard-check"></a>
+        <a href="aboutUs.html" class="fa-solid fa-address-card"></a>
+        <a href="#review" class="fa-solid fa-star-half-stroke"></a>
+        <ul class="explore-more">
+            <li>
+                <a href="html/explore.html#!Sport">sport</a>
+            </li>
+            <li>
+                <a href="html/explore.html#!Fashion">fashion</a>
+            </li>
+            <li>
+                <a href="html/explore.html#!Jewelry">jewelry</a>
+            </li>
+            <li>
+                <a href="html/explore.html#!Electronic">electronic</a>
+            </li>
+            <li>
+                <a href="html/explore.html#!Art">art</a>
+            </li>
+            <li>
+                <a href="html/explore.html#!Others">others</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- bottom navbar -->
+
+    <!-- content -->
+
+    <div layout:fragment="custom-content">
+
+    </div>
+
+    <!-- content -->
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> vietnam </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a sec:authorize="!isAuthenticated()" th:href="@{/homepage}"> <i class="fas fa-arrow-right"></i> home </a>
+                <a sec:authorize="isAuthenticated()" th:href="@{/homepage?user={user}(user=${user.getUsername()})}"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="html/explore.html"> <i class="fas fa-arrow-right"></i> explore </a>
+                <a href="html/completed.html"> <i class="fas fa-arrow-right"></i> completed </a>
+                <a href="html/aboutUs.html"> <i class="fas fa-arrow-right"></i> about </a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+                <a href="html/aboutUs.html"> <i class="fas fa-arrow-right"></i> disclaimer </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i>  group2.t1.2111.m1@gmail.com </a>
+                <img src="img/worldmap.png" class="map" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    
+        <div class="credit"> copyright © 2022 <span>auctionsTable</span> | all rights reserved! </div>
+    
+    </section>
+    
+    <!-- footer section ends -->
+    
+    <!-- loader  -->
+    
+<!--    <div class="loader-container">-->
+<!--        <img th:src="@{/img/loader.gif}" alt="">-->
+<!--    </div>-->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <!-- Angular Route -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <!-- custom main js file link -->
+    <script th:src="@{/js/script.js}"></script>
+    <!-- Custom detail js file -->
+<!--    <script th:src="@{/js/details.js}"></script>-->
+<!--    &lt;!&ndash; Custom cart js file &ndash;&gt;-->
+<!--    <script th:scr="@{/js/cart.js}"></script>-->
+<!--    &lt;!&ndash; JSON data file &ndash;&gt;-->
+<!--    <script th:src="@{/js/items.json}"></script>-->
+</body>
+</html>

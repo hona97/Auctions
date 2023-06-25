@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; text/html; charset=US-ASCII">
+    <title th:utext="#{label.form.title}">form</title>
+    <!-- Fontawesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/register.css}">
+    <script th:src="@{/js/pwstrength.js}"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="signup-form-container">
+
+<!--    <div id="close-signup-btn" class="fas fa-times"></div>-->
+
+    <form th:action="@{/user/registration}" method="post" enctype="utf8">
+        <div style="text-align: center;">
+            <a th:href="@{/homepage}" class="logo" style="font-size: 1.7rem; color: var(--black)"><i class="fa-solid fa-gavel"></i> auctionstable</a>
+        </div>
+        <h3>sign up</h3>
+
+        <span>first name <p>already have an account ? <a th:href="@{/userlogin}" th:utext="#{label.form.loginLink}" href="#" id="signin-btn">sign in</a></p></span>
+        <input type="text" class="box" id="firstName" name="firstName" placeholder="enter your first name" required minlength="2" maxlength="45">
+        <span id="firstNameError" style="display:none"></span>
+
+        <span>last name</span>
+        <input type="text" class="box" id="lastName" name="lastName" placeholder="enter your last name" required minlength="2" maxlength="45">
+        <span id="lastNameError" style="display:none"></span>
+
+        <span>email</span>
+        <input type="email" class="box" id="email" name="email" placeholder="enter your email" required minlength="8" maxlength="45">
+        <span id="emailError" class="alert alert-danger col-sm-4" style="display:none"></span>
+<!--        <p th:each="error : ${#fields.errors('email')}"-->
+<!--           th:text="${error}">Validation error</p>-->
+
+        <span>address</span>
+        <input type="text" class="box" id="address" name="address" placeholder="enter your address" required minlength="2" maxlength="65">
+
+        <span>password</span>
+        <input type="password" class="box" id="password" name="password" placeholder="enter your password" required minlength="5" maxlength="15">
+        <span id="passwordError" class="error" style="display:none"></span>
+
+        <span>confirm password</span>
+        <input type="password" class="box" id="matchPassword" name="matchingPassword" placeholder="confirm your password" required minlength="5" maxlength="15">
+        <span id="globalError" class="error" style="display:none"></span>
+
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me1">
+            <label for="remember-me1">remember me</label>
+        </div>
+        <input type="submit" value="sign up" class="btn">
+        <p>By clicking the "Sign up" button, you are creating an account, and agree to AuctionsTable' <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+    </form>
+
+</div>
+    <!-- Swiper JS -->
+    <script th:src="@{https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js}"></script>
+    <!-- Angular JS -->
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js}"></script>
+    <!-- Angular Route -->
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js}"></script>
+    <!-- custom main js file link -->
+    <script th:src="@{/js/script.js}"></script>
+    <!-- Custom detail js file -->
+    <script th:src="@{/js/details.js}"></script>
+    <!-- Custom cart js file -->
+    <script th:scr="@{/js/cart.js}"></script>
+    <!-- JSON data file -->
+    <script th:src="@{/js/items.json}"></script>
+
+    <script th:inline="javascript">
+        var serverContext = [[@{/}]];
+
+        $(document).ready(function () {
+            $('form').submit(function(event) {
+                register(event);
+            });
+
+            $(":password").keyup(function(){
+                if($("#password").val() != $("#matchPassword").val()){
+                    $("#globalError").show().html(/*[[#{PasswordMatches.user}]]*/);
+                }else{
+                    $("#globalError").html("").hide();
+                }
+            });
+
+            options = {
+                    common: {minChar:8},
+                    ui: {
+                        showVerdictsInsideProgressBar:true,
+                        showErrors:true,
+                        errorMessages:{
+                              wordLength: /*[[#{error.wordLength}]]*/,
+                              wordNotEmail: /*[[#{error.wordNotEmail}]]*/,
+                              wordSequences: /*[[#{error.wordSequences}]]*/,
+                              wordLowercase: /*[[#{error.wordLowercase}]]*/,
+                              wordUppercase: /*[[#{error.wordUppercase}]]*/,
+                                  wordOneNumber: /*[[#{error.wordOneNumber}]]*/,
+                              wordOneSpecialChar: /*[[#{error.wordOneSpecialChar}]]*/
+                            }
+                        }
+                };
+             $('#password').pwstrength(options);
+        });
+
+        function register(event){
+            event.preventDefault();
+            $(".alert").html("").hide();
+            $(".error-list").html("");
+            if($("#password").val() != $("#matchPassword").val()){
+                $("#globalError").show().html(/*[[#{PasswordMatches.user}]]*/);
+                return;
+            }
+            var formData= $('form').serialize();
+            $.post(serverContext + "user/registration",formData ,function(data){
+                if(data.message == "success"){
+                    window.location.href = serverContext + "homepage";
+                }
+
+            })
+            .fail(function(data) {
+                if(data.responseJSON.error.indexOf("MailError") > -1)
+                {
+                    window.location.href = serverContext + "emailError.html";
+                }
+                else if(data.responseJSON.error == "UserAlreadyExist"){
+                    $("#emailError").show().html(data.responseJSON.message);
+                }
+                else if(data.responseJSON.error.indexOf("InternalError") > -1){
+                    window.location.href = serverContext + "registration?message=" + data.responseJSON.message;
+                }
+                else{
+                    var errors = $.parseJSON(data.responseJSON.message);
+                    $.each( errors, function( index,item ){
+                        if (item.field){
+                            $("#"+item.field+"Error").show().append(item.defaultMessage+"<br/>");
+                        }
+                        else {
+                            $("#globalError").show().append(item.defaultMessage+"<br/>");
+                        }
+
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+{
+    "sportCyclingList":
+    [
+        {"id":"sp01001", "name":"Schwinn Urban Bike 3", "price":341, "date":"Mar 3, 2022 1:00 PM GMT", "by":"UKS Company","location":"Manchester, UK", "img":"img/sp01001_schwinn-urban-bike-1.jpg", "detail":"test.html", "detail": "itemsdetail/sp01001.html"},
+        {"id":"sp01002", "name":"Klien Bike", "price":270, "date": "Jun 15, 2021 8:00 AM GMT", "by":"Harry Potter", "location":"Hogwart, England" , "img":"img/sp01002_klien-bike-1.jpg", "detail": "itemsdetail/sp01002.html"},
+        {"id":"sp01003", "name":"Hurley Kickflip Beach Cruiser Bike", "price":520 , "date":"Feb 14, 2022 3:00 PM GMT", "by":"Johnson Company", "location": "Washington, America", "img":"img/sp01003_Hurley Kickflip Beach Cruiser Single Speed E-Bike-1.jpg", "detail": "itemsdetail/sp01003.html"},
+        {"id":"sp01004", "name":"Comaxsun Photochromic Cycling Glasses", "price": 50 , "date":"Aug 24, 2021 9:00 AM GMT", "by":"Robinson", "locaction":"Auckland, New Zealand", "status":"Good Condition", "img":"img/sp01004_Comaxsun Photochromic Cycling Glasses Discoloration Bike Goggles Sports Eyewear-1.jpg", "detail": "itemsdetail/sp01004.html"},
+        {"id":"sp01005", "name":"Water Bottle Cover Neoprene Insulated Sleeve Case Pouch", "price": 20 , "date":"Oct 30, 2021 1:00 PM GMT", "by":"Lucas Company", "location":"Amsterdam, Netherland", "status":"Good Condition", "img":"img/sp01005_1PC Water Bottle Cover Neoprene Insulated Sleeve Case Pouch for 550ML Drink-1.jpg", "detail": "itemsdetail/sp01005.html"}
+
+    ],
+    "sportWaterList":
+    [
+        {"id":"sp02001", "name":"Finis Zoomers YellowGold Training Swim", "price":20 , "date":"May 13, 2021 2:00 AM GMT", "by":"Tom Holland", "location":"Liverpoll, England", "status":"Good Condition", "img":"img/sp02001_Finis Zoomers YellowGold Training Swim Fins Women Size 4.5-6 Men Size 3.5-5-2.jpg", "detail": "itemsdetail/sp02001.html"},
+        {"id":"sp02002", "name":"U.S. Divers Womens SM Snorkel Combo Set Diva 2 LX Premium Max Silicone Materials", "price": 43, "date":"Feb 15, 2022 4:00 PM GMT", "by":"SamCatch", "location":"New York, America", "status":"Good Condition", "img":"img/sp02002_1.jpg", "detail": "itemsdetail/sp02002.html"},
+        {"id":"sp02003", "name":"LED Diving Headlamp Dive Flashlight Underwater Waterproof Head Light Lamp Torch", "price": 57, "date":"Aug 25, 2021 2:00 PM GMT", "by":"Tookie", "location":"Califonia, America", "status":"Good Condition", "img":"img/sp02003_1.jpg", "detail": "itemsdetail/sp02003.html"},
+        {"id":"sp02004", "name":"Lotus CWB Board Co Wakeboard Board", "price": 59, "date":"Feb 27, 2022 6:00 PM GMT", "by":"Derby", "location":"San Francisco, America", "status":"Good Condition", "img":"img/sp02004_1.jpg", "detail": "itemsdetail/sp02004.html"},
+        {"id":"sp02005", "name":"Bradley Fully Enclosed Deluxe 4-Buckle Adult Life Jacket Vest Blue", "price": 44, "date":"Oct 10, 2021 7:00 AM GMT", "by":"Bradley Store", "location":"Bristol, England", "status":"Good Condition", "img":"img/sp02005_1.jpg", "detail": "itemsdetail/sp02005.html"},
+        {"id":"sp02006", "name":"1pc Waterproof Silicone Swimming Goggles Anti-fog Diving Swim Glasses Unisex", "price": 13, "date":"Jan 05, 2022 5:00 PM GMT", "by":"Weshop", "location":"Shenzhen, China", "status":"Good Condition", "img":"img/sp02006_1.jpg", "detail": "itemsdetail/sp02006.html"},
+        {"id":"sp02007", "name":"Swimming Goggles for Men Women Adult Kids Diving Googles Anti Fogging", "price": 16, "date":"Sep 26, 2021 4:00 PM GMT", "by":"Zeelee", "location":"Beijing, China", "status":"Good Condition", "img":"img/sp02007_1.jpg", "detail": "itemsdetail/sp02007.html"}
+
+    ],
+    "sportMartialartList":
+    [
+        {"id":"sp03001", "name":"Men Silicone Teeth Mouth Guard Protector", "price": 3, "date":"Feb 20, 2022 9:00 AM GMT", "by":"OEM Company", "location":"Ho Chi Minh, Vietnam", "status":"Good Condition", "img":"img/sp03001_Men Silicone Teeth Mouth Guard Protector for Boxing Basketball NEW-1.jpg", "detail": "itemsdetail/sp03001.html"},
+        {"id":"sp03002", "name":"Taekwondo Kick Pad Takwondo Target 14.8 X 7.1 X 2.4inch Punching Training Target", "price": 18.8 , "date":"Jan 25, 2022 6:00 AM GMT", "by":"BiShop", "location":"Seoul, Korea", "status":"Good Condition", "img":"img/sp03002_1.jpg", "detail": "itemsdetail/sp03002.html"},
+        {"id":"sp03003", "name":"Takwondo Target Target Pad High Density EVA Sponge Kick Punching Pad PU", "price": 49 , "date":"Mar 01, 2022 3:00 PM GMt", "by":"JackSing", "location":"Shanghai, China", "status":"Good condition", "img":"img/sp03003_1.jpg", "detail": "itemsdetail/sp03003.html"},
+        {"id":"sp03004", "name":"Farabi Head Guard Boxing MMA Muay Thai Training, Sparring Head Protector", "price": 39, "date":"Jan 04, 2022 4:00 PM GMT", "by":"PhuketShop", "location":"Bangkok, Thailand", "status":"Good Condion", "img":"img/sp03004_1.jpg", "detail": "itemsdetail/sp03004.html"},
+        {"id":"sp03005", "name":"Cleto Reyes Hook and Loop Leather Training Boxing Gloves", "price": 60, "date": "Dec 17, 2021 5:00 PM GMT", "by":"RonadShop", "location":"Sao Paolo, Brazil", "status": "Good condition", "img":"img/sp03005_1.jpg", "detail": "itemsdetail/sp03005.html"},
+        {"id":"sp03006", "name":"Everlast Boxing Elite Leather Speed Bag", "price": 20, "date":"Sep 5, 2021 9:00 AM GMT", "by":"Kanglao", "location":"Shanghai, China", "status": "Good condition", "img":"img/sp03006.jpg", "detail": "itemsdetail/sp03006.html"},
+        {"id":"sp03007", "name":"(red 60CM)Fitness Sandbag Empty Training Boxing Hook Kick Sandbag Fight Karate", "price": 30, "date": "Mar 03, 2022 9:00 PM GMT", "by":"Saitama", "location":"Tokyo, Japan", "status": "Good condition", "img":"img/sp03007_1.jpg", "detail": "itemsdetail/sp03007.html"}
+    ],
+    "sportFitnessList":
+    [
+        {"id":"sp04001", "name":"NEW Nike Phantom Venom Elite TC FG Soccer Cleats", "price": 29, "date":"Jan 03, 2022 6:00 AM GMT", "by":"Zephys", "location":"Rio de Janeiro, Brazil", "status":"Good Condition", "img":"img/sp04001_1.jpg", "detail": "itemsdetail/sp04001.html"},
+        {"id":"sp04002", "name":"Yoga Resistance Bands Pull Rope Rubber Workout Equipment Chest Developer Fitness", "price": 9, "date": "Oct 29, 2021 7:45 AM GMT", "by":"Karolis", "location": "Nottingham, England", "status": "Good condition", "img":"img/sp04002_1.jpg", "detail": "itemsdetail/sp04002.html"},
+        {"id":"sp04003", "name":"Ab Wheel Roller Hanger Holder - Mount Your Ab Wheel On The Wall!", "price": 59.99, "date": "Jan 25, 2022 7:30 PM GMT", "by":"Agodas", "location": "Nelson, New Zealand", "status": "Good condition", "img":"img/sp04003_1.jpg", "detail": "itemsdetail/sp04003.html"},
+        {"id":"sp04004", "name":"Heavy Gripper Hand Grip Exercise Wrist Finger Fitness Strength Arm Grippers Set", "price": 28.3, "date": "Feb 04, 2022 8:40 AM GMT", "by":"AnthonyShop", "location":"Napier, New Zealand", "status": "Good condition", "img":"img/sp04004_1.jpg", "detail": "itemsdetail/sp04004.html"},
+        {"id":"sp04005", "name":"Fitness Arm BicepsTriceps Blaster Strong Power Stick Rope Wrist Roller Forea&qi", "price": 31.3, "date": "Jan 30, 2022 7:20 AM GMT", "by":"Qixin", "location": "Sydney, Australia", "status": "Good condition", "img":"img/sp04005_1.jpg", "detail": "itemsdetail/sp04005.html"},
+        {"id":"sp04006", "name":"Roller 2x 180mm x 80 mm replacement foam for exercise machine", "price": 24, "date": "Feb 28, 2022 4:50 PM GMT", "by":"NicolasAShop", "location": "Kyoto, Japan", "status": "Good condition", "img":"img/sp04006_1.jpg", "detail": "itemsdetail/sp04006.html"},
+        {"id":"sp04007", "name":"Pedometer step calorie counter pedometre hiking walking jogging kilometer", "price": 8, "date": "Dec 20, 2021 5:40 PM GMT", "by":"YaurtShop", "location": "Kobe, Japan", "status": "Good condition", "img":"img/sp04007_1.jpg", "detail": "itemsdetail/sp04007.html"},
+        {"id":"sp04008", "name":"BMI Body Mass Index Retractable Tape 150cm Measure Calculator Diet Weight Loss", "price": 9, "date": "Nov 29, 2021 6:20 PM GMT", "by":"ADSStore", "location":"Singapore, Singapore", "status": "Good condition", "img":"img/sp04008_1.jpg", "detail": "itemsdetail/sp04008.html"}
+    ],
+
+
+    "fashionFootwearList":
+    [
+        {"id":"fa01001", "name":"Nike Air Jordan 1 Mid Banned Black Red White", "price":120 , "date":"Sep 05, 2021 7:00 AM GMT", "by":"Michael Bay", "location":"Los Angeles, America", "status":"Good Condition", "img":"img/fa01001_Nike Air Jordan 1 Mid Banned Black Red White 554724-074 Mens and GS New-1.jpg", "detail": "itemsdetail/fa01001.html"},
+        {"id":"fa01002", "name":"Air Jordan 11 Retro (W) Animal Instinct | Size 12", "price": 275, "date": "Mar 05, 2022 8:10 AM GMT", "by":"JuniorStore", "location": "Los Angeles, America", "status": "Good condition", "img":"img/fa01002_1.jpg", "detail": "itemsdetail/fa01002.html"},
+        {"id":"fa01003", "name":"Nike SB Dunk Low Pro Skate or Die", "price": 1200, "date": "Dec 25, 2021 3:40 PM GMT", "by":"LizzySS", "location":"Incheon, Korea", "status": "Good condition", "img":"img/fa01003_1.jpg", "detail": "itemsdetail/fa01003.html"},
+        {"id":"fa01004", "name":"BAPE x KAWS Bapesta Black Polka Dot", "price": 20000, "date": "Dec 26, 2021 5:45 PM GMT", "by":"Alex Turny", "location": "Toronto, Canada", "status": "Good condition", "img":"img/fa01004_1.jpg", "detail": "itemsdetail/fa01004.html"},
+        {"id":"fa01005", "name":"adidas Yeezy Slide | Size 5", "price": 180, "date": "Oct 26, 2021 12:00 PM GMT", "by":"Katsura Kotaro", "location": "Osaka, Japan", "status": "Good condition", "img":"img/fa01005_1.jpg", "detail": "itemsdetail/fa01005.html"},
+        {"id":"fa01006", "name":"adidas Yeezy Boost 380 'Mist Reflective' | Size 7.5", "price": 375, "date": "Sep 10, 2021 11:30 AM GMT", "by":"GimbliShop", "location":"Hiroshima, Japan", "status": "Good condition", "img":"img/fa01006_1.jpg", "detail": "itemsdetail/fa01006.html"}
+    ],
+    "fashionClothingList":
+    [
+        {"id":"fa02001", "name":"Black Snow Mens Unisex Regluar Fit T-shirt", "price": 45, "date":"Aug 23, 2021 7:00 PM GMT", "by":"TeeShirt Vault", "location":"Florida, America", "status":"Good Condition", "img":"img/fa02001_Black Snow Wash Tee - Mens Unisex Regluar Fit T-shirt-1.jpg", "detail": "itemsdetail/fa02001.html"},
+        {"id":"fa02002", "name":"Grateful Dead", "price": 1235, "date": "Jan 26, 2022 1:30 PM GMT", "by":"Jimmy Clan", "location":"Berlin, Germany", "status": "Good condition", "img":"img/fa02002_1.jpg", "detail": "itemsdetail/fa02002.html"},
+        {"id":"fa02003", "name":"Long Strange Trip Henley Shirt 1993", "price": 385, "date": "Jan 23, 2022 7:20 AM GMT", "by": "LuisStore", "location": "Ha Noi, Vietnam", "status": "Good condition", "img":"img/fa02003_1.jpg", "detail": "itemsdetail/fa02003.html"},
+        {"id":"fa02004", "name":"Jacquard Silk Pajama Pants Size 40", "price": 1730, "date": "Feb 5, 2022 4:25 AM GMT", "by":"HarryPotShop", "location": "Califonia, America", "status": "Good condition", "img":"img/fa02004_1.jpg", "detail": "itemsdetail/fa02004.html"},
+        {"id":"fa02005", "name":"Jacquard Denim Carpenter Pants Size 31", "price": 1500, "date":"Sep 24, 2021 8:09 AM GMT", "by":"Astrid", "location":"Hambburg, Germany", "status": "Good condition", "img":"img/fa02005_1.jpg", "detail": "itemsdetail/fa02005.html"},
+        {"id":"fa02006", "name":"Black Fantasy Tweed Logo Zip Bomber Jacket 38, 2006", "price": 1800, "date":"Feb 20, 2022 9:09 AM GMT", "by":"HealthyPrice", "location":"Darwin, Australia", "status": "Good condition", "img":"img/fa02006_1.jpg", "detail": "itemsdetail/fa02006.html"}
+    ],
+    "fashionAccessoriesList":
+    [
+        {"id":"fa03001", "name":"Newsboy Gatsby Cap Flat Broner Driving Ivy Cabbie Hat Golf", "price": 21 , "date":"Feb 01, 2022 2:00 PM GMT", "by":"Headweargolf", "location":"London, England", "status":"Good Condition", "img":"img/fa03001_Washed Cotton Newsboy Gatsby Cap Flat Broner Driving Ivy Cabbie Hat Golf M L XXL-1.jpg", "detail": "itemsdetail/fa03001.html"},
+        {"id":"fa03002", "name":"Canvas Multicolor Escale Hawaii Limited Edition Bag Charm and Key Holder Silver Hardware, 2020", "price": 1000, "date":"Mar 14, 2022 11:30 AM GMT", "by":"LucasStore", "location":"Melborne, Australia", "status": "Good condition", "img":"img/fa03002_1.jpg", "detail": "itemsdetail/fa03002.html"},
+        {"id":"fa03003", "name":"Antarctica Grey Taïga and Monogram Coated Canvas Discovery Backpack Charm Silver Hardware, 2020", "price": 1000, "date":"Feb 4, 2022 10:40 AM GMT", "by":"Minimon", "location":"Leiden, Netherlands", "status": "Good condition", "img":"img/fa03003_1.jpg", "detail": "itemsdetail/fa03003.html"},
+        {"id":"fa03004", "name":"Virgil Abloh Brown Monogram Coated Canvas and Blue LV Pyramide Cities New York Reversible Belt 95, 2021", "price": 1800, "date":"Jan 24, 2020 7:50 AM GMT", "by":"Gagarin", "location":"Toronto, Canada", "status": "Good condition", "img":"img/fa03004_1.jpg", "detail": "itemsdetail/fa03004.html"},
+        {"id":"fa03005", "name":"Brown Monogram Coated Canvas Jewelry Box Gold Hardware, 2021", "price": 3800, "date":"Dec 20, 2021 9:00 PM GMT", "by":"Anna Clint", "location":"Florida, America", "status": "Good condition", "img":"img/fa03005_1.jpg", "detail": "itemsdetail/fa03005.html"},
+        {"id":"fa03006", "name":"Black and White Knit Cashmere Blend CC Scarf", "price": 650, "date":"Feb 9, 2022 7:35 AM GMT", "by":"Arthur Dante", "location":"Nagasaki, Japan", "status": "Good condition", "img":"img/fa03006_1.jpg", "detail": "itemsdetail/fa03006.html"}
+    ],
+
+    "jewelryRingsList":
+    [
+        {"id":"je01001", "name":"Gold, Silver and Diamond Soleil Ring", "price": 4000, "date":"Feb 15, 2022 12:35 PM GMT", "by":"Hokage", "location":"Nara, Japan", "status": "Good condition", "img":"img/je01001_1.jpg", "detail": "itemsdetail/je01001.html"},
+        {"id":"je01002", "name":"Gold, Cultured Pearl and Gem Set Ring", "price": 5000,"date":"Mar 14, 2022 9:00 AM GMT", "by":"James Ganh", "location":"London, England", "status":"Good condition", "img":"img/je01002_1.jpg", "detail": "itemsdetail/je01002.html"},
+        {"id":"je01003", "name":"Gold and Diamond Trina Ring", "price": 3700, "date": "Mar 3, 2022 10:30 AM GMT", "by":"Maria B", "location":"Manchester, England", "status":"Good condition", "img":"img/je01003_1.jpg", "detail": "itemsdetail/je01003.html"},
+        {"id":"je01004", "name":"White Gold and Diamond Ring", "price": 6000, "date": "Feb 20, 2022 6:00 PM GMT", "by":"Cartier", "location": "Verona, Italy", "status":"Good condition", "img":"img/je01004_1.jpg", "detail": "itemsdetail/je01004.html"},
+        {"id":"je01005", "name":"Gold, Platinum and Diamond Oval Swing Ring", "price": 7500, "date": "Jan 29, 2022 5:40 PM GMT", "by":"Jack Sparrow", "location":"Barcelona, Spain", "status":"Good condition", "img":"img/je01005_1.jpg", "detail": "itemsdetail/je01005.html"},
+        {"id":"je01006", "name":"White Gold and Diamond Dome Ring", "price": 3530, "date": "Feb 24, 2022 9:30 PM GMT", "by":"Bvlgari", "location":"Torino, Italy", "status":"Good condition", "img":"img/je01006_1.jpg", "detail": "itemsdetail/je01006.html"}
+    ],
+    "jewelryEarringsList":
+    [
+        {"id":"je02001", "name":"White Gold and Sapphire Dandelion Earclips", "price": 18000, "date": "Mar 03, 2022 10:30 AM GMT", "by":"Ronaldo Ron", "location":"Natal, Brazil", "status": "Good condition", "img":"img/je02001_1.jpg", "detail": "itemsdetail/je02001.html"},
+        {"id":"je02002", "name":"Gold, Cultured Pearl and Diamond Convertible Drop Earrings", "price": 21250, "date": "Feb 20, 2022 6:50 PM GMT", "by":"SiaDiamond", "location":"Birmingham, England", "status":"Good condition", "img":"img/je02002_1.jpg", "detail": "itemsdetail/je02002.html"},
+        {"id":"je02003", "name":"Gold, Black Jade, Quartz and Diamond Pneu Earrings", "price": 13500, "date": "Mar 1, 2022", "by":"Maria B", "location":"Manchester, England", "status":"Good condition", "img":"img/je02003_1.jpg", "detail": "itemsdetail/je02003.html"},
+        {"id":"je02004", "name":"Gold, Citrine and Diamond Drop Earclips", "price": 4560, "date": "Feb 1, 2022 8:50 PM GMT", "by":"Daniel J", "location":"Houston, America", "status":"Good condition", "img":"img/je02004_1.jpg", "detail": "itemsdetail/je02004.html"},
+        {"id":"je02005", "name":"Gold and Citrine Earclips", "price": 6500, "date": "Mar 4, 2022 5:10 PM GMT", "by":"Jack Sparrow", "location":"Barcelona, Spain", "status":"Good condition", "img":"img/je02005_1.jpg", "detail": "itemsdetail/je02005.html"},
+        {"id":"je02006", "name":"Gold, Platinum and Diamond Gift Box Earrings", "price": 4770, "date": "Mar 21, 2022", "by":"Jack Sparrow", "location":"Barcelona, Spain", "status":"Good condition", "img":"img/je02006_1.jpg", "detail": "itemsdetail/je02006.html"}
+    ],
+    "jewelryBraceletsList":
+    [
+        {"id":"je03001", "name":"White Gold and Diamond Hinged Bangle Bracelet", "price": 8500, "date":"Jan 28, 2022 3:00 PM GMT", "by":"EllenStore", "location":"Sydney, Australia", "status": "Good condition", "img":"img/je03001_1.jpg", "detail": "itemsdetail/je03001.html"},
+        {"id":"je03002", "name":"Gold, Platinum, Diamond and Ebony Cuff Bracelet", "price": 77000, "date": "Jan 24, 2022 6:30 PM GMT", "by":"Jonas II", "location":"Sevilla, Spain", "status":"Good condition", "img":"img/je03002_1.jpg", "detail": "itemsdetail/je03002.html"},
+        {"id":"je03003", "name":"White Gold, Diamond and Sapphire Bracelet", "price": 50000, "date": "Jan 5, 2022", "by":"Daniel J", "location":"Houston, America", "status":"Good condition", "img":"img/je03003_1.jpg", "detail": "itemsdetail/je03003.html"},
+        {"id":"je03004", "name":"Gold, Diamond and Yellow Sapphire Bracelet", "price": 18750, "date": "Mar 4, 2022", "by":"Jonas II", "location":"Sevilla, Spain", "status":"Good condition", "img":"img/je03004_1.jpg", "detail": "itemsdetail/je03004.html"},
+        {"id":"je03005", "name":"Rose Gold and Diamond Bracelet Demi-Parure", "price": 16000, "date": "Feb 20, 2022 7:00 AM GMT", "by":"James Ganh", "location":"London, England", "status":"Good condition", "img":"img/je03005_1.jpg", "detail": "itemsdetail/je03005.html"}
+    ],
+    "jewelryNecklacesList":
+    [
+        {"id":"je04001", "name":"White Gold, Gold and Diamond Florida Trip Necklace", "price": 5500, "date":"Feb 20, 2022 9:05 AM GMT", "by":"HitmanStore", "location":"Roma, Italy", "status": "Good condition", "img":"img/je04001_1.jpg", "detail": "itemsdetail/je04001.html"},
+        {"id":"je04002", "name":"Rose Gold and Silver Gemset Necklace", "price": 13750, "date": "Feb 25, 2022 9:40 PM GMT", "by":"Jin Rose", "location":"Nice, France", "status":"Good condition", "img":"img/je04002_1.jpg", "detail": "itemsdetail/je04002.html"},
+        {"id":"je04003", "name":"Gold, Cultured Pearl and Diamond Demi-Parure", "price": 17000, "date": "Feb 27. 2022 8:40 PM GMT", "by":"James Ganh", "location":"London, England", "status":"Good condition", "img":"img/je04003_1.jpg", "detail": "itemsdetail/je04003.html"},
+        {"id":"je04004", "name":"Gold, Emerald, Tsavorite and Diamond Pendant/Brooch Combination", "price": 7000, "date": "Mar 5, 2022 7:40 PM GMT", "by":"James Ganh", "location":"London, England", "status":"Good condition", "img":"img/je04004_1.jpg", "detail": "itemsdetail/je04004.html"},
+        {"id":"je04005", "name":"Gold, Ruby and Diamond Pendant Necklace", "price": 5000, "date": "Feb 25, 2022 8:00 AM GMT", "by":"James Ganh", "location":"London, England", "status":"Good condition", "img":"img/je04005_1.jpg", "detail": "itemsdetail/je04005.html"}
+    ],
+
+    "electronicCelAccessList":
+    [
+        {"id":"el01001", "name":"Apple iPhone 8 - 64GB/256GB - Gold/Grey/ Silver - UNLOCKED - Excellent Grade A", "price": 149, "date":"Jan 05, 2022 5:00 PM GMT", "by":"OneMobileStore", "location":"Singapore, Singapore", "status":"Good Condition", "img":"img/el01001_1.jpg", "detail": "itemsdetail/el01001.html"},
+        {"id":"el01002", "name":"Samsung Galaxy S10 Black Sprint AT&T T-Mobile Verizon Factory Unlocked VERY GOOD", "price": 239, " date": "Jan 1, 2022 9:30 PM GMT", "by":"Sam Roney", "location":"Los Angeles, America", "status":"Good condition", "img":"img/el01002_1.jpg", "detail": "itemsdetail/el01002.html"},
+        {"id":"el01003", "name":"Samsung Galaxy S10+ SM-G975U - 128GB - Flamingo Pink", "price": 362, " date": "Feb 14, 2022 8:10 AM GMT", "by":"Sam Roney", "location":"Los Angeles, America", "status":"Good condition", "img":"img/el01003_1.jpg", "detail": "itemsdetail/el01003.html"},
+        {"id":"el01004", "name":"LG V60 ThinQ 5G LMV600EA", "price": 1999, " date": "Mar 2, 2022 10:00 PM GMT", "by":"BBQShop", "location":"Incheon, Korea", "status":"Good condition", "img":"img/el01004_1.jpg", "detail": "itemsdetail/el01004.html"},
+        {"id":"el01005", "name":"BNIB LG G5 H850 32GB Titan Grey Android Factory", "price": 1239, " date": "Feb 23, 2022 4:00 PM GMT", "by":"BBQShop", "location":"Incheon, Korea", "status":"Good condition", "img":"img/el01005_1.jpg", "detail": "itemsdetail/el01005.html"},
+        {"id":"el01006", "name":"HTC 10, 32GB Memory 3GB Ram, Carbon Grey", "price": 1299, " date": "Feb 13, 2022 6:06 AM GMT", "by":"HTCStore", "location":"Busan, Korea", "status":"Good condition", "img":"img/el01006_1.jpg", "detail": "itemsdetail/el01006.html"}
+    ],
+    "electronicComTabList":
+    [
+        {"id":"el02001", "name":"Apple MacBook Air Core i5 1.7GHz 4GB RAM 128GB SSD 11inch MD224LL/A - Excellent", "price": 200, "date":"Feb 25, 2022 7:00 AM GMT", "by":"TerkShop", "location":"Shanghai, China", "status": "Good condition", "img":"img/el02001_1.jpg", "detail": "itemsdetail/el02001.html"},
+        {"id":"el02002", "name":"Razer Blade Pro 17", "price": 6500, " date": "Mar 3, 2022 11:40 PM GMT", "by":"DigiTechStore", "location":"San Diego, America", "status":"Good condition", "img":"img/el02002_1.jpg", "detail": "itemsdetail/el02002.html"},
+        {"id":"el02003", "name":"Getac v110 g5 Rugged Convertible", "price": 6020, " date": "Feb 28, 2022 5:00 PM GMT", "by":"DigiTechStore", "location":"San Diego, America", "status":"Good condition", "img":"img/el02003_1.jpg", "detail": "itemsdetail/el02003.html"},
+        {"id":"el02004", "name":"NEW 2022 SEALED APPLE MACBOOK PRO", "price": 9999, " date": "Mar 15, 2022 12:40 AM GMT", "by":"AppleQueenStore", "location":"Beijing, China", "status":"Good condition", "img":"img/el02004_1.jpg", "detail": "itemsdetail/el02004.html"},
+        {"id":"el02005", "name":"Apple iPad mini 2 7.9'' Tablet ", "price": 25000, " date": "Mar 16, 2022 7:05 PM GMT", "by":"AppleQueenStore", "location":"Beijing, China", "status":"Good condition", "img":"img/el02005_1.jpg", "detail": "itemsdetail/el02005.html"},
+        {"id":"el02006", "name":"Lenovo ThinkPad X1 Fold Gen1", "price": 7599, " date": "Feb 25, 2022 6:30 AM GMT", "by":"DigiTechStore", "location":"San Diego, America", "status":"Good condition", "img":"img/el02006_1.jpg", "detail": "itemsdetail/el02006.html"}
+    ],
+    "electronicVgameList":
+    [
+        {"id":"el03001", "name":"Sony Playstation 5 Disc Version PS5 Disc Video Game Console Japan Import", "price": 800, "date":"Dec 28, 2021 9:45 AM GMT", "by":"MrVgame", "location":"Berlin, Germany", "status": "Good condition", "img":"img/el03001_1.jpg", "detail": "itemsdetail/el03001.html"},
+        {"id":"el03002", "name":"NEW PLAYSTATION 1 ORIGINAL SCPH-1000 JAPAN WORLD PREMIERE 1994 VGA GRADED GOLD", "price": 1000000, " date": "Feb 2, 2022 3:00 PM GMT", "by":"ArtistPlayerStore", "location":"New York, America", "status":"Good condition", "img":"img/el03002_1.jpg", "detail": "itemsdetail/el03002.html"},
+        {"id":"el03003", "name":"Dreamcast CODE VERONICA Limited Console System STARS Ver Mint", "price": 18000, " date": "Mar 7, 2022 7:40 AM GMT", "by":"ArtistPlayerStore", "location":"New York, America", "status":"Good condition", "img":"img/el03003_1.jpg", "detail": "itemsdetail/el03003.html"},
+        {"id":"el03004", "name":"Zelda Ocarina of Time Collector's Edition", "price": 249999, " date": "Feb 27, 2022 2:10 PM GMT", "by":"ArtistPlayerStore", "location":"New York, America", "status":"Good condition", "img":"img/el03004_1.jpg", "detail": "itemsdetail/el03004.html"}
+    ],
+    "electronicSmartHomeList":
+    [
+        {"id":"el04001", "name":"360° 1080P IP E27 Light Bulb Camera Wi-Fi IR Night Smart Home Wireless Security", "price": 30, "date":"Dec 26, 2021 10:30 AM GMT", "by":"SercueStore", "location":"Toronto, Canada", "status": "Good condition", "img":"img/el04001_1.jpg", "detail": "itemsdetail/el04001.html"},
+        {"id":"el04002", "name":"Amazon Echo Dot 4th Gen Smart Speaker", "price": 59, " date": "Feb 26, 2022 2:10 PM GMT", "by":"SmartGuyStore", "location":"Dallas, America", "status":"Good condition", "img":"img/el04002_1.jpg", "detail": "itemsdetail/el04002.html"},
+        {"id":"el04003", "name":"Logitech Circle View 961000489 Home Security Camera", "price": 160, " date": "Mar 5, 2022 1:40 AM GMT", "by":"SmartGuyStore", "location":"Dallas, America", "status":"Good condition", "img":"img/el04003_1.jpg", "detail": "itemsdetail/el04003.html"},
+        {"id":"el04004", "name":"Samsung SHS-1321 Digital Door Lock", "price": 123, " date": "Feb 27, 2022 2:50 PM GMT", "by":"JoyCart", "location":"Seoul, Korea", "status":"Good condition", "img":"img/el04004_1.jpg", "detail": "itemsdetail/el04004.html"}
+    ],
+
+    "artPaintingsList":
+    [
+        {"id":"ar01001", "name":"Untitled 1957", "price": 6000, "date":"Feb 9, 2022 11:20 AM GMT", "by":"Pinchus Krémègne", "location":"Nopoli, Italy", "status": "Good condition", "img":"img/ar01001_1.jpg", "detail": "itemsdetail/ar01001.html"},
+        {"id":"ar01002", "name":"Cain and Abel", "price": 6000, " date": "Mar 7, 2022 5:20 PM GMT", "by":"John Fischer", "location":"Lyon, France", "status":"Good condition", "img":"img/ar01002_1.jpg", "detail": "itemsdetail/ar01002.html"},
+        {"id":"ar01003", "name":"Blumenszene", "price": 5000, " date": "Mar 4, 2022 1:25 AM GMT", "by":"Matthias Dornfeld", "location":"Lille, France", "status":"Good condition", "img":"img/ar01003_1.jpg", "detail": "itemsdetail/ar01003.html"},
+        {"id":"ar01004", "name":"Billboard", "price": 12000, " date": "Feb 1, 2022 9:00 AM GMT", "by":"Guy Pène Du Bois", "location":"Napoli, Italy", "status":"Good condition", "img":"img/ar01004_1.jpg", "detail": "itemsdetail/ar01004.html"},
+        {"id":"ar01005", "name":"Agathlan (Monument Valley)", "price": 6000, " date": "Feb 17, 2022 10:20 AM GMT", "by":"James A. Fetherolf", "location":"Venice, Italy", "status":"Good condition", "img":"img/ar01005_1.jpg", "detail": "itemsdetail/ar01005.html"},
+        {"id":"ar01006", "name":"Boating, Early Autumn", "price": 12000, " date": "Mar 13, 2022 5:00 PM GMT", "by":"Joseph Rusling Meeker", "location":"Toronto, Canada", "status":"Good condition", "img":"img/ar01006_1.jpg", "detail": "itemsdetail/ar01006.html"}
+    ],
+    "artPhotographsList":
+    [
+        {"id":"ar02001", "name":"Refinery Road (one of three)", "price": 7500, "date":"Mar 07, 2022 12:30 AM GMT", "by":"Allison V. Smith", "location":"Genova, Italy", "status": "Good condition", "img":"img/ar02001_1.jpg", "detail": "itemsdetail/ar02001.html"},
+        {"id":"ar02002", "name":"Teapot", "price": 2000, " date": "Feb 26, 2022 4:30 PM GMT", "by":"Ruth Bernhard", "location":"Leiden, Netherlands", "status":"Good condition", "img":"img/ar02002_1.jpg", "detail": "itemsdetail/ar02002.html"},
+        {"id":"ar02003", "name":"giallouno", "price": 2500, " date": "Mar 7, 2022 1:10 PM GMT", "by":"Doris McCarthy", "location":"Dunedin, New Zealand", "status":"Good condition", "img":"img/ar02003_1.jpg", "detail": "itemsdetail/ar02003.html"},
+        {"id":"ar02004", "name":"NYC, USA", "price": 4500, " date": "Mar 23, 2022 12:50 PM GMT", "by":"Ernst Haas", "location":"Houston, America", "status":"Good condition", "img":"img/ar02004_1.jpg", "detail": "itemsdetail/ar02004.html"},
+        {"id":"ar02005", "name":"New Mexico", "price": 1500, " date": "Feb 24, 2022 9:00 PM GMT", "by":"Arnold Genthe", "location":"Los Angeles, America", "status":"Good condition", "img":"img/ar02005_1.jpg", "detail": "itemsdetail/ar02005.html"}
+    ],
+    "artSculpturesList":
+    [
+        {"id":"ar03001", "name":"L'Accolade", "price": 12000, "date":"Mar 3, 2022 7:00 PM GMT", "by":"Pierre Jules Mêne", "location":"Paris, France", "status": "Good condition", "img":"img/ar03001_1.jpg", "detail": "itemsdetail/ar03001.html"},
+        {"id":"ar03002", "name":"Vessel on Stand", "price": 8000, " date": "Feb 25, 2022 10:00 PM GMT", "by":"Kenjiro Azuma", "location":"Osaka, Japan", "status":"Good condition", "img":"img/ar03002_1.jpg", "detail": "itemsdetail/ar03002.html"},
+        {"id":"ar03003", "name":"Untitled", "price": 6000, " date": "Feb 10, 2022 1:05 PM GMT", "by":"Ruby Neri", "location":"Paris, France", "status":"Good condition", "img":"img/ar03003_1.jpg", "detail": "itemsdetail/ar03003.html"},
+        {"id":"ar03004", "name":"Chair XIX", "price": 30000, " date": "Mar 4, 2022 9:20 PM GMT", "by":"David Bates", "location":"Lyon, France", "status":"Good condition", "img":"img/ar03004_1.jpg", "detail": "itemsdetail/ar03004.html"},
+        {"id":"ar03005", "name":"Flowers", "price": 85000, " date": "Feb 27, 2022 7:30 AM GMT", "by":"Jim Love", "location":"Paris, France", "status":"Good condition", "img":"img/ar03005_1.jpg", "detail": "itemsdetail/ar03005.html"},
+        {"id":"ar03006", "name":"Grey and White Moonjar", "price": 18500, " date": "Feb 20, 2022 9:40 AM GMT", "by":"Morten Løbner Espersen", "location":"Dijon, France", "status":"Good condition", "img":"img/ar03006_1.jpg", "detail": "itemsdetail/ar03006.html"}
+    ],
+    "artCelebList":
+    [
+        {"id":"ar04001", "name":"Muhammad Ali at the Fifth Street Gym, Miami Beach 1964", "price": 4000, "date":"Feb 23, 2022 3:00 PM GMT", "by":"Flip Schulke", "location":"New York, America", "status": "Good condition", "img":"img/ar04001_1.jpg", "detail": "itemsdetail/ar04001.html"},
+        {"id":"ar04002", "name":"Michael Jackson's white button up shirt", "price": 21000, " date": "Feb 26, 2022 7:20 AM GMT", "by":"FrankCascio", "location":"Los Angeles, America", "status":"Good condition", "img":"img/ar04002_1.jpg", "detail": "itemsdetail/ar04002.html"},
+        {"id":"ar04003", "name":"Kobe Bryant Signed Game Used Patch Rookie Card", "price": 20000, " date": "Mar 7, 2022 4:50 PM GMT", "by":"JimJD", "location":"Los Angeles, America", "status":"Good condition", "img":"img/ar04003_1.jpg", "detail": "itemsdetail/ar04003.html"},
+        {"id":"ar04004", "name":"Bob Dylan and Johnny Cash", "price": 13750, " date": "Jan 30, 2022 2:00 AM GMT", "by":"Russell Young", "location":"New York, America", "status":"Good condition", "img":"img/ar04004_1.jpg", "detail": "itemsdetail/ar04004.html"}
+    ],
+
+    "otherList":
+    [
+        {"id":"ot001", "name":"Opus One, Red Blend, Napa Valley 2013 (1 DM)", "price": 1200,"date":"Mar 2, 2022 4:00 PM GMT", "by":"Wine Boy", "location":"Roma, Italy", "status":"Good Condition", "img":"img/ot001_1.jpg", "detail": "itemsdetail/ot001.html"},
+        {"id":"ot002", "name":"Silver and Enamel Baby Cup", "price": 627,"date":"Mar 2, 2022 2:15 PM GMT", "by":"Tiffany & Co.", "location":"Venice, Italy", "status":"Good condition", "img":"img/ot002_1.jpg", "detail": "itemsdetail/ot002.html"},
+        {"id":"ot003", "name":"German Parcel-Gilt Silver Figural Wedding Cup Circa 1915", "price": 2450,"date":"Feb 28, 2022 7:23 PM GMT", "by":"Georg Roth & Co.", "location":"Paris, France", "status":"Good condition", "img":"img/ot003_1.jpg", "detail": "itemsdetail/ot003.html"}
+    ]
+}
+
+

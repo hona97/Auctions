@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{mainlayout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+</head>
+<body>
+<div layout:fragment="custom-content" style="width: 100%; background: #f8f8f8">
+  <section class="section section1">
+
+    <div class="container container1">
+
+      <div class="profile">
+
+        <div class="options">
+          <a href="#" class="accountsettings">
+            <ion-icon name="person"></ion-icon>
+            <div></div>
+          </a>
+          <div class="communication" id="login-btn">
+            <ion-icon name="notifications"></ion-icon>
+            <a href="#">communications</a>
+          </div>
+          <a href="#" class="payment">
+            <ion-icon name="wallet"></ion-icon>
+            <div></div>
+          </a>
+          <a href="#" class="transaction">
+            <ion-icon name="timer"></ion-icon>
+            <div>transactions</div>
+          </a>
+          <a href="#" class="password">
+            <ion-icon name="key"></ion-icon>
+            <div></div>
+          </a>
+          <div class="redeem">
+            <ion-icon name="gift"></ion-icon>
+            <a href="#">redeem code</a>
+          </div>
+        </div>
+
+        <div class="informations">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+</div>
+</body>
+</html>

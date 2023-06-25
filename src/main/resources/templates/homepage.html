@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{mainlayout}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/homepage.css}">
+</head>
+<body>
+    <!-- home section starts -->
+
+    <div layout:fragment="custom-content">
+
+        <section class="home" id="home">
+
+            <div class="swiper mySwiper home-slider">
+
+                <div class="swiper-wrapper wrapper">
+
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>Upcoming</span>
+                            <h3>Untitled 1957</h3>
+                            <p>Mar 4 | 0 Am GMT</p>
+                            <a href="html/itemsdetail/ar01001.html" class="btn">Bids</a>
+                        </div>
+                        <div class="image">
+                            <img src="img/ar01001_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>Upcoming</span>
+                            <h3>Flowers</h3>
+                            <p>Mar 4 | 0 Am Gmt</p>
+                            <a href="html/itemsdetail/ar03005.html" class="btn">Bids</a>
+                        </div>
+                        <div class="image">
+                            <img src="img/ar03005_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>Upcoming</span>
+                            <h3>White Gold and Sapphire Dandelion Earclips</h3>
+                            <p>Mar 4 | 0 Am Gmt</p>
+                            <a href="html/itemsdetail/je02001.html" class="btn">Bids</a>
+                        </div>
+                        <div class="image">
+                            <img src="img/je02001_1.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
+
+        <!-- home section ends -->
+
+
+        <!-- icons section starts -->
+
+        <section class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-plane"></i>
+                <div class="content">
+                    <h3>fast shipping</h3>
+                    <p>order over $100</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-lock"></i>
+                <div class="content">
+                    <h3>secure payment</h3>
+                    <p>100 secure payment</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-redo-alt"></i>
+                <div class="content">
+                    <h3>easy return</h3>
+                    <p>10 days returns</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-headset"></i>
+                <div class="content">
+                    <h3>24/7 support</h3>
+                    <p>call us anytime</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- icons section ends -->
+
+        <!-- featured section starts  -->
+
+        <section class="featured" id="featured">
+
+            <h1 class="heading"> <span>popular items</span> </h1>
+
+            <div class="swiper featured-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="img/ot002_1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Silver and Enamel Baby Cup</h3>
+                            <div class="price">current bids <br>
+                                <span>$627.00</span></div>
+                            <a href="html/itemsdetail/ot002.html" class="btn">bid now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="img/ar02002_1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Teapot</h3>
+                            <div class="price">current bids <br>
+                                <span>$2000.00</span></div>
+                            <a href="html/itemsdetail/ar02002.html" class="btn">bid now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="img/ar01004_1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Billboard</h3>
+                            <div class="price">current bids <br>
+                                <span>$12000.00</span></div>
+                            <a href="html/itemsdetail/ar01004.html" class="btn">bid now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="img/el02002_1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Razer Blade Pro 17</h3>
+                            <div class="price">current bids <br>
+                                <span>$6500.00</span></div>
+                            <a href="html/itemsdetail/el02002.html" class="btn">bid now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="img/el01004_1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>LG V60 ThinQ 5G LMV600EA</h3>
+                            <div class="price">current bids <br>
+                                <span>$1999.00</span></div>
+                            <a href="html/itemsdetail/el01004.html" class="btn">bid now</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-search"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="image">
+                            <img src="img/je04002_1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Rose Gold and Silver Gemset Necklace</h3>
+                            <div class="price">current bids <br>
+                                <span>$13750.00</span></div>
+                            <a href="html/itemsdetail/je04002.html" class="btn">bid now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+
+        </section>
+
+        <!-- featured section ends -->
+
+        <!-- newsletter section starts-->
+
+        <section class="newsletter">
+            <form action="">
+                <h3>subscribe for latest updates</h3>
+                <input type="email" name="" placeholder="enter your email" id="" class="box">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </section>
+
+    </div>
+
+    <!-- newsletter section ends -->
+
+</body>
+</html>

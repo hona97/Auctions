@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0; text/html; charset=US-ASCII">
+  <title th:utext="#{label.pages.home.title}">Title</title>
+  <script th:inline="javascript">
+	function validate() {
+        if (document.f.username.value == "" && document.f.password.value == "") {
+            alert(/*[[#{message.username} + ' and ' + #{message.password}]]*/);
+            document.f.username.focus();
+            return false;
+        }
+        if (document.f.username.value == "") {
+            alert(/*[[#{message.username}]]*/);
+            document.f.username.focus();
+            return false;
+        }
+        if (document.f.password.value == "") {
+            alert(/*[[#{message.password}]]*/);
+            document.f.password.focus();
+            return false;
+        }
+    }
+
+  </script>
+  <!-- Fontawesome CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+
+</head>
+<body>
+
+  <div class="login-form-container">
+
+<!--    <div id="close-login-btn" class="fas fa-times"></div>-->
+
+    <form name='f' th:action="@{/login}" role="form" method='post' onsubmit="return validate();">
+      <div style="text-align: center;">
+        <a th:href="@{/homepage}" class="logo"><i class="fa-solid fa-gavel"></i> auctionstable</a>
+      </div>
+      <h3>sign in</h3>
+      <div th:if="${message != null}" style="color: green;" th:utext="${message}">message</div>
+      <div th:if="${error != null}" style="color: red;" th:utext="${session[SPRING_SECURITY_LAST_EXCEPTION]}">error</div>
+<!--      <div th:if="${param.error}" style="color: red;">Invalid username and password.</div>-->
+      <div th:if="${param.logout}" style="color: red;">You have been logged out.</div>
+      <div th:if="${param.success}">You've successfully registered to our awesome app!</div>
+
+
+      <span th:utext="#{label.form.loginEmail}">username</span>
+      <input type="text" id="username" name="username" class="box" placeholder="enter your email" value="">
+      <span th:utext="#{label.form.loginPass}">password</span>
+      <input type="password" id="password" name="password" class="box" placeholder="enter your password">
+      <div class="checkbox">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me">remember me</label>
+      </div>
+      <button type="submit" class="btn" th:value="#{label.form.submit}" name="submit">Submit</button>
+      <p>forget password ? <a href="#" th:href="@{/forgetPassword}" th:utext="#{message.resetPassword}"> click here</a></p>
+      <p>don't have an account ?<a href="/" th:href="@{/registration}" id="createone-btn"> create one</a></p>
+      <div style="justify-content: center; align-items: center; text-align: center; margin-top: 1rem;">
+        <a href="?lang=en" th:utext="#{label.form.loginEnglish}">login</a> |
+        <a href="?lang=es_ES" th:utext="#{label.form.loginSpanish}">login</a>
+      </div>
+
+    </form>
+  </div>
+  <!-- Swiper JS -->
+<!--  <script th:src="@{https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js}"></script>-->
+  <!-- Angular JS -->
+  <script th:src="@{https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js}"></script>
+  <!-- Angular Route -->
+  <script th:src="@{https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js}"></script>
+  <!-- custom main js file link -->
+  <script th:src="@{/js/script.js}"></script>
+  <!-- Custom detail js file -->
+  <script th:src="@{/js/details.js}"></script>
+  <!-- Custom cart js file -->
+  <script th:scr="@{/js/cart.js}"></script>
+  <!-- JSON data file -->
+  <script th:src="@{/js/items.json}"></script>
+</body>
+</html>

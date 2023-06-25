@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="header">
+        <div class="header-1">
+            <a href="../index.html" class="logo"> <i class="fa-solid fa-gavel"></i>auctionstable</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart" onclick="window.location='[[@{/cart}]]'"></div>
+                <div id="login-btn" class="fa-solid fa-right-to-bracket"></div>
+                <div id="signup-btn" class="fa-solid fa-registered"></div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <div><a href="../index.html">home</a></div>
+                <div>
+                    <a href="explore.html">explore</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-item">
+                            <a href="explore.html#!Sport">sport</a>
+                            <ul>
+                                <li><a href="explore.html#!Cycling">cycling</a></li>
+                                <li><a href="explore.html#!WaterSport">water sport</a></li>
+                                <li><a href="explore.html#!MartialArt">martial art</a></li>
+                                <li><a href="explore.html#!Fitness">fitness</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="explore.html#!Fashion">fashion</a>
+                            <ul>
+                                <li><a href="explore.html#!Footwear">footwear</a></li>
+                                <li><a href="explore.html#!Clothing">clothing</a></li>
+                                <li><a href="explore.html#!Accessories">accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="explore.html#!Jewelry">jewelry</a>
+                            <ul>
+                                <li><a href="explore.html#!Rings">rings</a></li>
+                                <li><a href="explore.html#!Earrings">earrings</a></li>
+                                <li><a href="explore.html#!Bracelets">bracelets</a></li>
+                                <li><a href="explore.html#!Necklaces">necklaces</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="explore.html#!Electronic">electronic</a>
+                            <ul>
+                                <li><a href="explore.html#!CellphoneandAccessories">cellphones and accessories</a></li>
+                                <li><a href="explore.html#!ComputersandTablets">computers and tablets</a></li>
+                                <li><a href="explore.html#!VideosgameandConsole">videos game and console</a></li>
+                                <li><a href="explore.html#!SmartHome">smart home</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="explore.html#!Art">art</a>
+                            <ul>
+                                <li><a href="explore.html#!Paintings">paintings</a></li>
+                                <li><a href="explore.html#!Photographs">photographs</a></li>
+                                <li><a href="explore.html#!Sculptures">sculptures</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="#!Others">others</a>
+                        </div>
+                    </div>
+                </div>
+                <div><a href="completed.html">completed</a></div>
+                <div><a href="aboutUs.html">about</a></div>
+                <div><a href="#review">review</a></div>
+            </nav>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar">
+        <a href="../index.html" class="fas fa-home"></a>
+        <a href="explore.html" id="explore-bottom" class="fa-solid fa-square-caret-left"></a>
+        <a href="completed.html" class="fa-solid fa-clipboard-check"></a>
+        <a href="aboutUs.html" class="fa-solid fa-address-card"></a>
+        <a href="#review" class="fa-solid fa-star-half-stroke"></a>
+        <ul class="explore-more">
+            <li>
+                <a href="explore.html#!Sport">sport</a>
+            </li>
+            <li>
+                <a href="explore.html#!Fashion">fashion</a>
+            </li>
+            <li>
+                <a href="explore.html#!Jewelry">jewelry</a>
+            </li>
+            <li>
+                <a href="explore.html#!Electronic">electronic</a>
+            </li>
+            <li>
+                <a href="explore.html#!Art">art</a>
+            </li>
+            <li>
+                <a href="explore.html#!Others">others</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- bottom navbar -->
+
+    
+
+    <!-- login form -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ?<a href="#"> click here</a></p>
+            <p>don't have an account ?<a href="#" id="createone-btn"> create one</a></p>
+        </form>
+
+    </div>
+
+    <!-- login form -->
+
+    <!-- sign up form -->
+
+    <div class="signup-form-container">
+
+        <div id="close-signup-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign up</h3>
+            <span>username <p>already have an account ? <a href="#" id="signin-btn">sign in</a></p></span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me1">
+                <label for="remember-me1">remember me</label>
+            </div>
+            <input type="submit" value="sign up" class="btn">
+            <p>By clicking the "Sign up" button, you are creating an account, and agree to AuctionsTable' <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+        </form>
+
+    </div>
+
+    <!-- sign up form -->
+
+    <!-- cart -->
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Bid</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody class="show-cart">
+                <!-- <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/homeimage1.jpg" alt=""></td>
+                    <td>Gold Watch</td>
+                    <td>$140.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$140.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/feature4.png" alt=""></td>
+                    <td>Design</td>
+                    <td>$140.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$140.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/feature3.png" alt=""></td>
+                    <td>Nice Dress</td>
+                    <td>$140.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$140.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/feature1.png" alt=""></td>
+                    <td>Teddy Bear</td>
+                    <td>$140.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$140.00</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section">
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Quantity</td>
+                    <td class="total-count">$560.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong class="total-cart">$560.00</strong></td>
+                </tr>
+            </table>
+            <button class="btn" onclick="window.location.href='payment.html'">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <!-- cart -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> vietnam </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../index.html"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="explore.html"> <i class="fas fa-arrow-right"></i> explore </a>
+                <a href="completed.html"> <i class="fas fa-arrow-right"></i> completed </a>
+                <a href="aboutUs.html"> <i class="fas fa-arrow-right"></i> about </a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+                <a href="aboutUs.html"> <i class="fas fa-arrow-right"></i> disclaimer </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i>  group2.t1.2111.m1@gmail.com </a>
+                <img src="../img/worldmap.png" class="map" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    
+        <div class="credit"> copyright © 2022 <span>auctionsTable</span> | all rights reserved! </div>
+    
+    </section>
+    
+    <!-- footer section ends -->
+
+    <!-- custom js ile link -->
+    <script src="../js/script.js"></script>
+    <script src="../js/cart.js"></script>
+    
+</body>
+</html>
